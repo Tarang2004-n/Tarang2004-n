@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Multimodal-Healthcare-Diagnostic-Assistant",
+    "description": "An end-to-end multimodal clinical decision-support system combining PyTorch DenseNet-121 (with Grad-CAM spatial heatmaps) and Groq-hosted Llama-3.3-70B to synthesize structured diagnostic reports from chest X-rays and patient EHR data.",
+    "language": "Jupyter Notebook",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "html_url": "https://github.com/Tarang2004-n/Multimodal-Healthcare-Diagnostic-Assistant"
+  },
+  {
+    "name": "Economic-vitality-index",
+    "description": "Machine learning pipeline in R to quantify regional economic damage and market risk from satellite imagery using spectral intensity, texture metrics, and deep learning.",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "html_url": "https://github.com/Tarang2004-n/Economic-vitality-index"
+  },
+  {
+    "name": "BlackSwan_Grid_Resilience",
+    "description": "Interactive Streamlit & PyTorch power grid stress testing dashboard simulating Black Swan load spikes.",
+    "language": "Python",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "html_url": "https://github.com/Tarang2004-n/BlackSwan_Grid_Resilience"
+  },
+  {
+    "name": "AetherMed",
+    "description": null,
+    "language": "Python",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "html_url": "https://github.com/Tarang2004-n/AetherMed"
+  },
+  {
+    "name": "predictive-maintenance-digital-twin",
+    "description": null,
+    "language": "Python",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "html_url": "https://github.com/Tarang2004-n/predictive-maintenance-digital-twin"
+  },
+  {
+    "name": "planwiz",
+    "description": null,
+    "language": "Dart",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "html_url": "https://github.com/Tarang2004-n/planwiz"
+  }
+]
