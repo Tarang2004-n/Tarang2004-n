@@ -54,7 +54,7 @@ def get_data():
             days = {d['date']: d['contributionCount'] for w in cal['weeks'] for d in w['contributionDays']}
             if not days or sum(days.values()) != cal['totalContributions']:
                 raise ValueError('Inconsistent contribution calendar')
-            snap.update(contributions=days, total_contributions=cal['totalContributions'], as_of=max(days))
+            snap.update(contributions=days, total_contributions=cal['totalContributions'], as_of=max(days), calendar_refreshed=True)
         except Exception as error:
             print(f'Contribution refresh unavailable; retaining dated history: {error}')
     return snap, {r['name']: r for r in repos}
@@ -199,7 +199,7 @@ def main():
         generated['projects/'+name.lower()+'.svg']=card(name,repos.get(name,{}))
     for path,content in generated.items():
         # Retain the last successful contribution asset when GraphQL is unavailable.
-        if path=='activity.svg' and TOKEN and snap['as_of']=='2026-09-10' and (OUT/path).exists():
+        if path=='activity.svg' and TOKEN and not snap.get('calendar_refreshed') and (OUT/path).exists():
             continue
         (OUT/path).write_text(content)
     print('Rendered '+str(len(generated))+' SVG assets')
